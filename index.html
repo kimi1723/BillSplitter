@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BillSplitter</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia|Trirong"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="top">
+        <h1>BillSplitter</h1>
+        <p>Split the bill with your friends!</p>
+      </div>
+      <div class="bottom">
+        <label for="price">Amount to split</label>
+        <input type="number" id="price" />
+
+        <label for="people">Number of people</label>
+        <input type="number" id="people" />
+
+        <label for="tip">Tip</label>
+        <select id="tip">
+          <option value="0" selected>No tip</option>
+          <option value="1.05">5%</option>
+          <option value="1.1">10%</option>
+          <option value="1.15">15%</option>
+          <option value="1.2">20%</option>
+        </select>
+
+        <button class="count">Evaluate</button>
+        <p class="error"></p>
+        <p class="cost-info">
+          You should split by <span class="cost"></span>zł
+        </p>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
